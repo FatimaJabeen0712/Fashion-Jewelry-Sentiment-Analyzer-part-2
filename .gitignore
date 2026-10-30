@@ -1,0 +1,29 @@
+# Secrets - never commit
+.env
+.streamlit/secrets.toml
+*.pem
+*service-account*.json
+*credentials*.json
+
+# Data and exports (may contain customer text)
+data/*
+!data/.gitkeep
+exports/
+*.csv
+!tests/fixtures/*.csv
+!docs/*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
